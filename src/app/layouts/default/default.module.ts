@@ -1,3 +1,4 @@
+import { HighchartsChartModule } from 'highcharts-angular';
 import { MatDividerModule } from '@angular/material/divider';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -21,7 +22,8 @@ import { FlexModule } from "@angular/flex-layout";
     MatSidenavModule,
     MatDividerModule,
     MatCardModule,
-    FlexModule
+    FlexModule,
+    HighchartsChartModule
   ],
 })
 export class DefaultModule {}

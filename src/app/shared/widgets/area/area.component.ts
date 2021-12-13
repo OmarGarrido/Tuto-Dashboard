@@ -16,7 +16,7 @@ export class AreaComponent implements OnInit {
   ngOnInit(): void {
     this.chartOptions = {
       chart: {
-        type: 'areaspline',
+        type: 'column',
       },
       title: {
         text: 'Contagios de la última semana',
@@ -41,14 +41,14 @@ export class AreaComponent implements OnInit {
           'Sábado',
           'Domingo',
         ],
-        plotBands: [
-          {
-            // visualize the weekend
-            from: 4.5,
-            to: 6.5,
-            color: 'rgba(68, 170, 213, .2)',
-          },
-        ],
+        // plotBands: [
+        //   {
+        //     // visualize the weekend
+        //     from: 4.5,
+        //     to: 6.5,
+        //     color: 'rgba(68, 170, 213, .2)',
+        //   },
+        // ],
       },
       yAxis: {
         title: {
@@ -66,30 +66,37 @@ export class AreaComponent implements OnInit {
         areaspline: {
           fillOpacity: 0.5,
         },
+
       },
       series: [
         {
-          name: 'Informática',
+          name: 'Gestión Empresarial',
+          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
           data: [3, 4, 3, 5, 4, 10, 12],
         },
         {
           name: 'Aeronáutica',
+          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
           data: [1, 3, 4, 3, 3, 5, 4],
         },
         {
-          name: 'Gestión Empresarial',
+          name: 'Sistemas',
+          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
           data: [5, 3, 1, 8, 2, 3, 0],
         },
         {
-          name: 'Sistemas',
+          name: 'Mecatrónica',
+          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
           data: [10, 5, 8, 6, 3, 2, 2],
         },
         {
-          name: 'Mecatrónica',
+          name: 'Informática',
+          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
           data: [8, 4, 2, 0, 3, 6, 9],
         },
         {
           name: 'Bioquímica',
+          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
           data: [1, 3, 5, 7, 8, 9, 5],
         },
       ],
