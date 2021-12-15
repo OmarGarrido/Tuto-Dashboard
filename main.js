@@ -26,6 +26,33 @@ __webpack_require__.r(__webpack_exports__);
 
 class DashboardService {
     constructor() {
+        this.cards = [
+            Math.round(Math.random() * 20),
+            Math.round(Math.random() * 30),
+            Math.round(Math.random() * 40),
+            Math.round(Math.random() * 50),
+            Math.round(Math.random() * 60),
+            Math.round(Math.random() * 70),
+            Math.round(Math.random() * 100),
+        ];
+        this.random = [
+            Math.round(Math.random() * 100),
+            Math.round(Math.random() * 100),
+            Math.round(Math.random() * 100),
+            Math.round(Math.random() * 100),
+            Math.round(Math.random() * 100),
+            Math.round(Math.random() * 100),
+            Math.round(Math.random() * 100),
+        ];
+        this.lows = [
+            Math.round(Math.random() * 100),
+            Math.round(Math.random() * 70),
+            Math.round(Math.random() * 60),
+            Math.round(Math.random() * 50),
+            Math.round(Math.random() * 40),
+            Math.round(Math.random() * 30),
+            Math.round(Math.random() * 20),
+        ];
         this.columnData = [
             {
                 name: 'Gestión Empresarial',
@@ -723,8 +750,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_widgets_drilldown_drilldown_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../shared/widgets/drilldown/drilldown.component */ "M+/B");
 /* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/flex-layout */ "YUcS");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
-/* harmony import */ var _shared_widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/widgets/contagios/contagios.component */ "qzwm");
-/* harmony import */ var _shared_widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../shared/widgets/comparacion/comparacion.component */ "uvJk");
+/* harmony import */ var _shared_widgets_lollipop_lollipop_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/widgets/lollipop/lollipop.component */ "vMHU");
+/* harmony import */ var _shared_widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../shared/widgets/contagios/contagios.component */ "qzwm");
+/* harmony import */ var _shared_widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../shared/widgets/comparacion/comparacion.component */ "uvJk");
+
 
 
 
@@ -739,6 +768,9 @@ class DashboardComponent {
         this.dashboardService = dashboardService;
     }
     ngOnInit() {
+        this.lows = this.dashboardService.lows;
+        this.random = this.dashboardService.random;
+        this.cards = this.dashboardService.cards;
         this.columnData = this.dashboardService.columnData;
         this.columnDataDrill = this.dashboardService.columnDataDrill;
         this.lollipop = this.dashboardService.lollipop;
@@ -746,7 +778,7 @@ class DashboardComponent {
     }
 }
 DashboardComponent.ɵfac = function DashboardComponent_Factory(t) { return new (t || DashboardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_dashboard_service__WEBPACK_IMPORTED_MODULE_1__["DashboardService"])); };
-DashboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DashboardComponent, selectors: [["app-dashboard"]], decls: 14, vars: 3, consts: [[3, "data"], [3, "data", "datadrill"], ["fxLayout", "row", "fxLayoutAlign", "space-between center", "fxLayoutGap", "20px", 1, "stats-cards", 2, "padding", "10px"], ["fxFlex", "25"], ["label", "Contagios", "total", "60", "percentage", "20%"], ["fxFlex", "75"]], template: function DashboardComponent_Template(rf, ctx) { if (rf & 1) {
+DashboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DashboardComponent, selectors: [["app-dashboard"]], decls: 24, vars: 6, consts: [[3, "data"], [3, "data", "datadrill"], ["fxLayout", "row", "fxLayoutAlign", "space-between center", "fxLayoutGap", "20px", 1, "stats-cards", 2, "padding", "10px"], ["fxFlex", "50"], ["label", "Nuevos contagios", "type", "areaspline", 3, "data"], ["fxFlex", "25"], ["label", "Contagios este mes", 3, "data"], ["label", "Media de contagios", "type", "column", 3, "data"], ["label", "Contagios", "total", "60", "percentage", "20%"], ["fxFlex", "75"]], template: function DashboardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-widget-area", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -759,10 +791,24 @@ DashboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-card", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "app-widget-contagios", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "app-widget-lollipop", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-card", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "app-widget-comparacion");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "app-widget-lollipop", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "mat-card", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "app-widget-lollipop", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "mat-divider");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "mat-card", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "app-widget-contagios", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "mat-card", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "app-widget-comparacion");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -770,7 +816,13 @@ DashboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx.lollipop);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx.columnData)("datadrill", ctx.columnDataDrill);
-    } }, directives: [_shared_widgets_area_area_component__WEBPACK_IMPORTED_MODULE_2__["AreaComponent"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__["MatDivider"], _shared_widgets_drilldown_drilldown_component__WEBPACK_IMPORTED_MODULE_4__["DrilldownComponent"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutAlignDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutGapDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCard"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultFlexDirective"], _shared_widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_7__["ContagiosComponent"], _shared_widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_8__["ComparacionComponent"]], styles: [".stats-cards[_ngcontent-%COMP%]   .mat-card[_ngcontent-%COMP%] {\n  overflow: hidden;\n}\n\ntable[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\nmat-divider[_ngcontent-%COMP%] {\n  border-width: 3px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxkYXNoYm9hcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0U7RUFDRSxnQkFBQTtBQUFKOztBQUlBO0VBQ0UsV0FBQTtBQURGOztBQUlBO0VBQ0UsaUJBQUE7QUFERiIsImZpbGUiOiJkYXNoYm9hcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc3RhdHMtY2FyZHMge1xyXG4gIC5tYXQtY2FyZCB7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIH1cclxufVxyXG5cclxudGFibGUge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG5tYXQtZGl2aWRlcntcclxuICBib3JkZXItd2lkdGg6IDNweDtcclxufVxyXG5cclxuIl19 */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx.cards);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx.lows);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx.random);
+    } }, directives: [_shared_widgets_area_area_component__WEBPACK_IMPORTED_MODULE_2__["AreaComponent"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__["MatDivider"], _shared_widgets_drilldown_drilldown_component__WEBPACK_IMPORTED_MODULE_4__["DrilldownComponent"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutAlignDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutGapDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCard"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultFlexDirective"], _shared_widgets_lollipop_lollipop_component__WEBPACK_IMPORTED_MODULE_7__["LollipopComponent"], _shared_widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_8__["ContagiosComponent"], _shared_widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_9__["ComparacionComponent"]], styles: [".stats-cards[_ngcontent-%COMP%]   .mat-card[_ngcontent-%COMP%] {\n  overflow: hidden;\n}\n\ntable[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\nmat-divider[_ngcontent-%COMP%] {\n  border-width: 3px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxkYXNoYm9hcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0U7RUFDRSxnQkFBQTtBQUFKOztBQUlBO0VBQ0UsV0FBQTtBQURGOztBQUlBO0VBQ0UsaUJBQUE7QUFERiIsImZpbGUiOiJkYXNoYm9hcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc3RhdHMtY2FyZHMge1xyXG4gIC5tYXQtY2FyZCB7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIH1cclxufVxyXG5cclxudGFibGUge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG5tYXQtZGl2aWRlcntcclxuICBib3JkZXItd2lkdGg6IDNweDtcclxufVxyXG5cclxuIl19 */"] });
 
 
 /***/ }),
@@ -1413,28 +1465,113 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highcharts */ "6n/F");
 /* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/icon */ "NFeN");
+/* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
+
 
 
 
 class LollipopComponent {
     constructor() {
+        this.total = Math.round(Math.random() * 100);
+        this.percentage = Math.round(Math.random() * 100);
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_0__;
         this.chartOptions = {};
     }
     ngOnInit() {
-        this.chartOptions = {};
+        this.chartOptions = {
+            chart: {
+                type: this.type,
+                background: null,
+                borderWidth: 0,
+                margin: [2, 2, 2, 2],
+                height: 60,
+            },
+            title: {
+                text: null,
+            },
+            subtitle: {
+                text: null,
+            },
+            xAxis: {
+                labels: {
+                    enabled: false,
+                },
+                title: {
+                    text: null,
+                },
+                startOnTick: false,
+                endOnTick: false,
+                tickOptions: [],
+            },
+            yAxis: {
+                labels: {
+                    enabled: false,
+                },
+                title: {
+                    text: null,
+                },
+                startOnTick: false,
+                endOnTick: false,
+                tickOptions: [],
+            },
+            tooltip: {
+                split: true,
+                outside: true,
+            },
+            legend: {
+                enabled: false,
+            },
+            credits: {
+                enabled: false,
+            },
+            exporting: {
+                enabled: false,
+            },
+            series: [
+                {
+                    data: this.data,
+                },
+            ],
+        };
+        // HC_exporting(Highcharts);
+        setTimeout(() => {
+            window.dispatchEvent(new Event('resize'));
+        }, 300);
     }
 }
 LollipopComponent.ɵfac = function LollipopComponent_Factory(t) { return new (t || LollipopComponent)(); };
-LollipopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: LollipopComponent, selectors: [["app-widget-lollipop"]], inputs: { data: "data" }, decls: 2, vars: 2, consts: [[2, "width", "100%", "height", "100%", "display", "block", 3, "Highcharts", "options"]], template: function LollipopComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "highcharts-chart", 0);
+LollipopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: LollipopComponent, selectors: [["app-widget-lollipop"]], inputs: { label: "label", data: "data", type: "type" }, decls: 13, vars: 5, consts: [[1, "text"], [1, "total"], ["color", "primary"], ["color", "description"], [1, "widget"], [2, "width", "100%", "height", "60px", "display", "block", 3, "Highcharts", "options"]], template: function LollipopComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "h4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "span", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "mat-icon", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6, "trending_up");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10, "de contagios");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "highcharts-chart", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.label);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.total);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx.percentage, "% ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("Highcharts", ctx.Highcharts)("options", ctx.chartOptions);
-    } }, directives: [highcharts_angular__WEBPACK_IMPORTED_MODULE_2__["HighchartsChartComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJsb2xsaXBvcC5jb21wb25lbnQuc2NzcyJ9 */"] });
+    } }, directives: [_angular_material_icon__WEBPACK_IMPORTED_MODULE_2__["MatIcon"], highcharts_angular__WEBPACK_IMPORTED_MODULE_3__["HighchartsChartComponent"]], styles: ["h4[_ngcontent-%COMP%] {\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n\n.total[_ngcontent-%COMP%] {\n  font-size: 3em;\n}\n\n.mat-icon[_ngcontent-%COMP%], .description[_ngcontent-%COMP%] {\n  color: green;\n  font-size: 2em;\n}\n\n.mat-icon[_ngcontent-%COMP%] {\n  position: relative;\n  padding: 0 20px;\n  top: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcbG9sbGlwb3AuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0Esa0JBQUE7QUFDRjs7QUFFQTtFQUNFLGNBQUE7QUFDRjs7QUFFQTs7RUFFRSxZQUFBO0VBQ0EsY0FBQTtBQUNGOztBQUVBO0VBQ0Usa0JBQUE7RUFDQSxlQUFBO0VBQ0EsUUFBQTtBQUNGIiwiZmlsZSI6ImxvbGxpcG9wLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaDQge1xyXG4gIG1hcmdpbi10b3A6IDA7XHJcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xyXG59XHJcblxyXG4udG90YWwge1xyXG4gIGZvbnQtc2l6ZTogM2VtO1xyXG59XHJcblxyXG4ubWF0LWljb24sXHJcbi5kZXNjcmlwdGlvbiB7XHJcbiAgY29sb3I6IGdyZWVuO1xyXG4gIGZvbnQtc2l6ZTogMmVtO1xyXG59XHJcblxyXG4ubWF0LWljb24ge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBwYWRkaW5nOiAwIDIwcHg7XHJcbiAgdG9wOiA1cHg7XHJcbn1cclxuIl19 */"] });
 
 
 /***/ }),
