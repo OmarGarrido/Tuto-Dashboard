@@ -12,6 +12,403 @@ module.exports = __webpack_require__(/*! D:\OMAR\Documentos\CursoAngular\dashboa
 
 /***/ }),
 
+/***/ "0AbP":
+/*!***********************************************!*\
+  !*** ./src/app/services/dashboard.service.ts ***!
+  \***********************************************/
+/*! exports provided: DashboardService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardService", function() { return DashboardService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+class DashboardService {
+    constructor() {
+        this.columnData = [
+            {
+                name: 'Gestión Empresarial',
+                y: Math.random() * 16,
+                drilldown: 'Gestión Empresarial',
+            },
+            {
+                name: 'Aeronáutica',
+                y: Math.random() * 16,
+                drilldown: 'Aeronáutica',
+            },
+            {
+                name: 'Sistemas',
+                y: Math.random() * 16,
+                drilldown: 'Sistemas',
+            },
+            {
+                name: 'Mecatrónica',
+                y: Math.random() * 16,
+                drilldown: 'Mecatrónica',
+            },
+            {
+                name: 'Informática',
+                y: Math.random() * 16,
+                drilldown: 'Informática',
+            },
+            {
+                name: 'Bioquímica',
+                y: Math.random() * 16,
+                drilldown: 'Bioquímica',
+            },
+        ];
+        this.columnDataDrill = [
+            {
+                type: 'column',
+                tooltip: {
+                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
+                },
+                // borderWidth: 0,
+                dataLabels: {
+                    enabled: false,
+                },
+                name: 'Gestión Empresarial',
+                id: 'Gestión Empresarial',
+                data: [
+                    ['Enero', Math.random() * 100],
+                    ['Febrero', Math.random() * 100],
+                    ['Marzo', Math.random() * 100],
+                    ['Abril', Math.random() * 100],
+                    ['Mayo', Math.random() * 100],
+                    ['Junio', Math.random() * 100],
+                    ['Julio', Math.random() * 100],
+                    ['Agosto', Math.random() * 100],
+                    ['Septiembre', Math.random() * 100],
+                    ['Octubre', Math.random() * 100],
+                    ['Noviembre', Math.random() * 100],
+                    ['Diciembre', Math.random() * 100],
+                ],
+            },
+            {
+                type: 'column',
+                dataLabels: {
+                    enabled: false,
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
+                },
+                name: 'Aeronáutica',
+                id: 'Aeronáutica',
+                data: [
+                    ['Enero', Math.random() * 10],
+                    ['Febrero', Math.random() * 10],
+                    ['Marzo', Math.random() * 10],
+                    ['Abril', Math.random() * 10],
+                    ['Mayo', Math.random() * 10],
+                    ['Junio', Math.random() * 10],
+                    ['Julio', Math.random() * 10],
+                    ['Agosto', Math.random() * 10],
+                    ['Septiembre', Math.random() * 10],
+                    ['Octubre', Math.random() * 10],
+                    ['Noviembre', Math.random() * 10],
+                    ['Diciembre', Math.random() * 10],
+                ],
+            },
+            {
+                type: 'column',
+                dataLabels: {
+                    enabled: false,
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
+                },
+                name: 'Sistemas',
+                id: 'Sistemas',
+                data: [
+                    ['Enero', Math.random() * 10],
+                    ['Febrero', Math.random() * 10],
+                    ['Marzo', Math.random() * 10],
+                    ['Abril', Math.random() * 10],
+                    ['Mayo', Math.random() * 10],
+                    ['Junio', Math.random() * 10],
+                    ['Julio', Math.random() * 10],
+                    ['Agosto', Math.random() * 10],
+                    ['Septiembre', Math.random() * 10],
+                    ['Octubre', Math.random() * 10],
+                    ['Noviembre', Math.random() * 10],
+                    ['Diciembre', Math.random() * 10],
+                ],
+            },
+            {
+                type: 'column',
+                dataLabels: {
+                    enabled: false,
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
+                },
+                name: 'Mecatrónica',
+                id: 'Mecatrónica',
+                data: [
+                    ['Enero', Math.random() * 10],
+                    ['Febrero', Math.random() * 10],
+                    ['Marzo', Math.random() * 10],
+                    ['Abril', Math.random() * 10],
+                    ['Mayo', Math.random() * 10],
+                    ['Junio', Math.random() * 10],
+                    ['Julio', Math.random() * 10],
+                    ['Agosto', Math.random() * 10],
+                    ['Septiembre', Math.random() * 10],
+                    ['Octubre', Math.random() * 10],
+                    ['Noviembre', Math.random() * 10],
+                    ['Diciembre', Math.random() * 10],
+                ],
+            },
+            {
+                type: 'column',
+                dataLabels: {
+                    enabled: false,
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
+                },
+                name: 'Bioquímica',
+                id: 'Bioquímica',
+                data: [
+                    ['Enero', Math.random() * 10],
+                    ['Febrero', Math.random() * 10],
+                    ['Marzo', Math.random() * 10],
+                    ['Abril', Math.random() * 10],
+                    ['Mayo', Math.random() * 10],
+                    ['Junio', Math.random() * 10],
+                    ['Julio', Math.random() * 10],
+                    ['Agosto', Math.random() * 10],
+                    ['Septiembre', Math.random() * 10],
+                    ['Octubre', Math.random() * 10],
+                    ['Noviembre', Math.random() * 10],
+                    ['Diciembre', Math.random() * 10],
+                ],
+            },
+            {
+                type: 'column',
+                dataLabels: {
+                    enabled: false,
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
+                },
+                name: 'Informática',
+                id: 'Informática',
+                data: [
+                    ['Enero', Math.random() * 10],
+                    ['Febrero', Math.random() * 10],
+                    ['Marzo', Math.random() * 10],
+                    ['Abril', Math.random() * 10],
+                    ['Mayo', Math.random() * 10],
+                    ['Junio', Math.random() * 10],
+                    ['Julio', Math.random() * 10],
+                    ['Agosto', Math.random() * 10],
+                    ['Septiembre', Math.random() * 10],
+                    ['Octubre', Math.random() * 10],
+                    ['Noviembre', Math.random() * 10],
+                    ['Diciembre', Math.random() * 10],
+                ],
+            },
+        ];
+        this.lollipop = [
+            {
+                name: 'Gestión Empresarial',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Aeronáutica',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Sistemas',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Mecatrónica',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Informática',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Bioquímica',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Contaduria',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Mecanica',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Química',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Electrónica',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                name: 'Industrial',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+            {
+                dataLabels: {
+                    enabled: true,
+                    format: '<span style="font-size:x-small;">{point.y:.0f}</span>',
+                },
+                type: 'line',
+                name: 'Promedio',
+                data: [
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                    Math.random() * 20,
+                ],
+            },
+        ];
+        this.areaSeries = [
+            {
+                name: 'Gestión Empresarial',
+                // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
+                data: [3, 4, 3, 5, 4, 10, 12],
+                drilldown: 'Gestión Empresarial',
+            },
+            {
+                name: 'Aeronáutica',
+                // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
+                data: [1, 3, 4, 3, 3, 5, 4],
+            },
+            {
+                name: 'Sistemas',
+                // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
+                data: [5, 3, 1, 8, 2, 3, 0],
+            },
+            {
+                name: 'Mecatrónica',
+                // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
+                data: [10, 5, 8, 6, 3, 2, 2],
+            },
+            {
+                name: 'Informática',
+                // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
+                data: [8, 4, 2, 0, 3, 6, 9],
+            },
+            {
+                name: 'Bioquímica',
+                // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
+                data: [1, 3, 5, 7, 8, 9, 5],
+            },
+        ];
+    }
+}
+DashboardService.ɵfac = function DashboardService_Factory(t) { return new (t || DashboardService)(); };
+DashboardService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: DashboardService, factory: DashboardService.ɵfac, providedIn: 'root' });
+
+
+/***/ }),
+
 /***/ "1efy":
 /*!*******************************************************!*\
   !*** ./src/app/shared/widgets/area/area.component.ts ***!
@@ -46,14 +443,15 @@ class AreaComponent {
                 text: 'Contagios de la última semana',
             },
             legend: {
-                layout: 'vertical',
-                align: 'left',
-                verticalAlign: 'top',
-                x: 60,
-                y: 15,
-                floating: true,
-                borderWidth: 1,
-                backgroundColor: '#FFFFFF',
+            // enabled:true,
+            // layout: 'vertical',
+            // align: 'button',
+            // verticalAlign: 'button',
+            // x: 60,
+            // y: 15,
+            // floating: true,
+            // borderWidth: 0,
+            // backgroundColor: '#FFFFFF',
             },
             xAxis: {
                 categories: [
@@ -74,7 +472,13 @@ class AreaComponent {
             tooltip: {
                 shared: true,
                 valueSuffix: ' Contagios',
+                pointFormat: '<span style="color:{point.color}">\u25CF</span>{series.name}</span>: <b>{point.y:.0f}</b><br/>',
             },
+            // tooltip: {
+            //   headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            //   pointFormat:
+            //     '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}</b> %<br/>',
+            // },
             credits: {
                 enabled: false,
             },
@@ -83,38 +487,7 @@ class AreaComponent {
                     fillOpacity: 0.5,
                 },
             },
-            series: [
-                {
-                    name: 'Gestión Empresarial',
-                    // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-                    data: [3, 4, 3, 5, 4, 10, 12],
-                },
-                {
-                    name: 'Aeronáutica',
-                    // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-                    data: [1, 3, 4, 3, 3, 5, 4],
-                },
-                {
-                    name: 'Sistemas',
-                    // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-                    data: [5, 3, 1, 8, 2, 3, 0],
-                },
-                {
-                    name: 'Mecatrónica',
-                    // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-                    data: [10, 5, 8, 6, 3, 2, 2],
-                },
-                {
-                    name: 'Informática',
-                    // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-                    data: [8, 4, 2, 0, 3, 6, 9],
-                },
-                {
-                    name: 'Bioquímica',
-                    // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-                    data: [1, 3, 5, 7, 8, 9, 5],
-                },
-            ],
+            series: this.data,
         };
         highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_1___default()(highcharts__WEBPACK_IMPORTED_MODULE_0__);
         setTimeout(() => {
@@ -123,7 +496,7 @@ class AreaComponent {
     }
 }
 AreaComponent.ɵfac = function AreaComponent_Factory(t) { return new (t || AreaComponent)(); };
-AreaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: AreaComponent, selectors: [["app-widget-area"]], decls: 1, vars: 2, consts: [[2, "width", "100%", "height", "400px", "display", "block", 3, "Highcharts", "options"]], template: function AreaComponent_Template(rf, ctx) { if (rf & 1) {
+AreaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: AreaComponent, selectors: [["app-widget-area"]], inputs: { data: "data" }, decls: 1, vars: 2, consts: [[2, "width", "100%", "height", "400px", "display", "block", 3, "Highcharts", "options"]], template: function AreaComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "highcharts-chart", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("Highcharts", ctx.Highcharts)("options", ctx.chartOptions);
@@ -186,7 +559,7 @@ class SidebarComponent {
     }
 }
 SidebarComponent.ɵfac = function SidebarComponent_Factory(t) { return new (t || SidebarComponent)(); };
-SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SidebarComponent, selectors: [["app-sidebar"]], decls: 28, vars: 0, consts: [[1, "profile-card", 2, "text-align", "center"], [1, "header"], ["src", "https://firebasestorage.googleapis.com/v0/b/flutter-notificaciones-5a781.appspot.com/o/gitProfile.jpg?alt=media&token=08a015be-fa6a-45e6-83f7-b242815b16ed", 1, "img"], ["mat-subheader", ""], ["mat-list-item", "", "routerLinkActive", "list-item-active", "routerLink", "/"], ["mat-list-item", "", "routerLinkActive", "list-item-active", "routerLink", "/posts"], ["mat-list-item", "", "routerLinkActive", "list-item-active", "routerLink", "/articles"], ["matSubheader", ""], [1, "mat-18"]], template: function SidebarComponent_Template(rf, ctx) { if (rf & 1) {
+SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SidebarComponent, selectors: [["app-sidebar"]], decls: 28, vars: 0, consts: [[1, "profile-card", 2, "text-align", "center"], [1, "header"], ["src", "../../../../assets/gitProfile.jpg", 1, "img"], ["mat-subheader", ""], ["mat-list-item", "", "routerLinkActive", "list-item-active", "routerLink", "/"], ["mat-list-item", "", "routerLinkActive", "list-item-active", "routerLink", "/posts"], ["mat-list-item", "", "routerLinkActive", "list-item-active", "routerLink", "/articles"], ["matSubheader", ""], [1, "mat-18"]], template: function SidebarComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-nav-list");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
@@ -229,45 +602,31 @@ SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " Lead ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_angular_material_list__WEBPACK_IMPORTED_MODULE_1__["MatNavList"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__["MatDivider"], _angular_material_list__WEBPACK_IMPORTED_MODULE_1__["MatListSubheaderCssMatStyler"], _angular_material_list__WEBPACK_IMPORTED_MODULE_1__["MatListItem"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLinkActive"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_4__["MatIcon"]], styles: ["[_nghost-%COMP%]   .mat-icon[_ngcontent-%COMP%] {\n  vertical-align: middle;\n  margin-right: 20px;\n}\n[_nghost-%COMP%]   .profile.card[_ngcontent-%COMP%] {\n  text-align: center;\n  padding: 0px, 20px, 20px, 20px;\n}\n[_nghost-%COMP%]   .img[_ngcontent-%COMP%] {\n  width: 120px;\n  height: 120px;\n  object-fit: fill;\n  border-radius: 50%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcc2lkZWJhci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUNFLHNCQUFBO0VBQ0Esa0JBQUE7QUFBSjtBQUdFO0VBQ0Usa0JBQUE7RUFDQSw4QkFBQTtBQURKO0FBS0U7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7QUFISiIsImZpbGUiOiJzaWRlYmFyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xyXG4gIC5tYXQtaWNvbiB7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xyXG4gIH1cclxuXHJcbiAgLnByb2ZpbGUuY2FyZCB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nOiAwcHgsIDIwcHgsIDIwcHgsIDIwcHg7XHJcblxyXG4gIH1cclxuXHJcbiAgLmltZyB7XHJcbiAgICB3aWR0aDogMTIwcHg7XHJcbiAgICBoZWlnaHQ6IDEyMHB4O1xyXG4gICAgb2JqZWN0LWZpdDogZmlsbDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICB9XHJcbn1cclxuIl19 */"] });
+    } }, directives: [_angular_material_list__WEBPACK_IMPORTED_MODULE_1__["MatNavList"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__["MatDivider"], _angular_material_list__WEBPACK_IMPORTED_MODULE_1__["MatListSubheaderCssMatStyler"], _angular_material_list__WEBPACK_IMPORTED_MODULE_1__["MatListItem"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLinkActive"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_4__["MatIcon"]], styles: ["[_nghost-%COMP%]   .mat-icon[_ngcontent-%COMP%] {\n  vertical-align: middle;\n  margin-right: 20px;\n}\n[_nghost-%COMP%]   .profile.card[_ngcontent-%COMP%] {\n  text-align: center;\n  padding: 0px, 20px, 20px, 20px;\n}\n[_nghost-%COMP%]   .img[_ngcontent-%COMP%] {\n  width: 120px;\n  height: 120px;\n  object-fit: fill;\n  border-radius: 50%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcc2lkZWJhci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUNFLHNCQUFBO0VBQ0Esa0JBQUE7QUFBSjtBQUdFO0VBQ0Usa0JBQUE7RUFDQSw4QkFBQTtBQURKO0FBS0U7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7QUFISiIsImZpbGUiOiJzaWRlYmFyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xyXG4gIC5tYXQtaWNvbiB7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xyXG4gIH1cclxuXHJcbiAgLnByb2ZpbGUuY2FyZCB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nOiAwcHgsIDIwcHgsIDIwcHgsIDIwcHg7XHJcblxyXG4gIH1cclxuXHJcbiAgLmltZyB7XHJcbiAgICB3aWR0aDogMTIwcHg7XHJcbiAgICBoZWlnaHQ6IDEyMHB4O1xyXG4gICAgb2JqZWN0LWZpdDogZmlsbDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICB9XHJcblxyXG59XHJcbiJdfQ== */"] });
 
 
 /***/ }),
 
-/***/ "M95H":
-/*!**********************************************************!*\
-  !*** ./src/app/modules/dashboard/dashboard.component.ts ***!
-  \**********************************************************/
-/*! exports provided: DashboardComponent */
+/***/ "M+/B":
+/*!*****************************************************************!*\
+  !*** ./src/app/shared/widgets/drilldown/drilldown.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: DrilldownComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardComponent", function() { return DashboardComponent; });
-/* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highcharts/modules/exporting */ "AxlJ");
-/* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! highcharts */ "6n/F");
-/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _shared_widgets_area_area_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../shared/widgets/area/area.component */ "1efy");
-/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/divider */ "f0Cb");
-/* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
-/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/flex-layout */ "YUcS");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
-/* harmony import */ var _shared_widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../shared/widgets/contagios/contagios.component */ "qzwm");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DrilldownComponent", function() { return DrilldownComponent; });
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highcharts */ "6n/F");
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
 
 
 
-
-
-
-
-
-
-class DashboardComponent {
+class DrilldownComponent {
     constructor() {
-        // prueba = new Chart(DriDrilldown);
-        this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_1__;
+        this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_0__;
         this.chartOptions = {};
     }
     ngOnInit() {
@@ -320,38 +679,7 @@ class DashboardComponent {
                 {
                     name: 'Carreras',
                     colorByPoint: true,
-                    data: [
-                        {
-                            name: 'Gestión Empresarial',
-                            y: Math.random() * 16,
-                            drilldown: 'Gestión Empresarial',
-                        },
-                        {
-                            name: 'Aeronáutica',
-                            y: Math.random() * 16,
-                            drilldown: 'Aeronáutica',
-                        },
-                        {
-                            name: 'Sistemas',
-                            y: Math.random() * 16,
-                            drilldown: 'Sistemas',
-                        },
-                        {
-                            name: 'Mecatrónica',
-                            y: Math.random() * 16,
-                            drilldown: 'Mecatrónica',
-                        },
-                        {
-                            name: 'Informática',
-                            y: Math.random() * 16,
-                            drilldown: 'Informática',
-                        },
-                        {
-                            name: 'Bioquímica',
-                            y: Math.random() * 16,
-                            drilldown: 'Bioquímica',
-                        },
-                    ],
+                    data: this.data,
                 },
             ],
             drilldown: {
@@ -360,211 +688,89 @@ class DashboardComponent {
                 //         align: 'right'
                 //     }
                 // },
-                series: [
-                    {
-                        type: 'column',
-                        tooltip: {
-                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
-                        },
-                        // borderWidth: 0,
-                        dataLabels: {
-                            enabled: false,
-                        },
-                        name: 'Gestión Empresarial',
-                        id: 'Gestión Empresarial',
-                        data: [
-                            ['Enero', Math.random() * 100],
-                            ['Febrero', Math.random() * 100],
-                            ['Marzo', Math.random() * 100],
-                            ['Abril', Math.random() * 100],
-                            ['Mayo', Math.random() * 100],
-                            ['Junio', Math.random() * 100],
-                            ['Julio', Math.random() * 100],
-                            ['Agosto', Math.random() * 100],
-                            ['Septiembre', Math.random() * 100],
-                            ['Octubre', Math.random() * 100],
-                            ['Noviembre', Math.random() * 100],
-                            ['Diciembre', Math.random() * 100],
-                        ],
-                    },
-                    {
-                        type: 'column',
-                        dataLabels: {
-                            enabled: false,
-                        },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
-                        },
-                        name: 'Aeronáutica',
-                        id: 'Aeronáutica',
-                        data: [
-                            ['Enero', Math.random() * 10],
-                            ['Febrero', Math.random() * 10],
-                            ['Marzo', Math.random() * 10],
-                            ['Abril', Math.random() * 10],
-                            ['Mayo', Math.random() * 10],
-                            ['Junio', Math.random() * 10],
-                            ['Julio', Math.random() * 10],
-                            ['Agosto', Math.random() * 10],
-                            ['Septiembre', Math.random() * 10],
-                            ['Octubre', Math.random() * 10],
-                            ['Noviembre', Math.random() * 10],
-                            ['Diciembre', Math.random() * 10],
-                        ],
-                    },
-                    {
-                        type: 'column',
-                        dataLabels: {
-                            enabled: false,
-                        },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
-                        },
-                        name: 'Sistemas',
-                        id: 'Sistemas',
-                        data: [
-                            ['Enero', Math.random() * 10],
-                            ['Febrero', Math.random() * 10],
-                            ['Marzo', Math.random() * 10],
-                            ['Abril', Math.random() * 10],
-                            ['Mayo', Math.random() * 10],
-                            ['Junio', Math.random() * 10],
-                            ['Julio', Math.random() * 10],
-                            ['Agosto', Math.random() * 10],
-                            ['Septiembre', Math.random() * 10],
-                            ['Octubre', Math.random() * 10],
-                            ['Noviembre', Math.random() * 10],
-                            ['Diciembre', Math.random() * 10],
-                        ],
-                    },
-                    {
-                        type: 'column',
-                        dataLabels: {
-                            enabled: false,
-                        },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
-                        },
-                        name: 'Mecatrónica',
-                        id: 'Mecatrónica',
-                        data: [
-                            ['Enero', Math.random() * 10],
-                            ['Febrero', Math.random() * 10],
-                            ['Marzo', Math.random() * 10],
-                            ['Abril', Math.random() * 10],
-                            ['Mayo', Math.random() * 10],
-                            ['Junio', Math.random() * 10],
-                            ['Julio', Math.random() * 10],
-                            ['Agosto', Math.random() * 10],
-                            ['Septiembre', Math.random() * 10],
-                            ['Octubre', Math.random() * 10],
-                            ['Noviembre', Math.random() * 10],
-                            ['Diciembre', Math.random() * 10],
-                        ],
-                    },
-                    {
-                        type: 'column',
-                        dataLabels: {
-                            enabled: false,
-                        },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
-                        },
-                        name: 'Bioquímica',
-                        id: 'Bioquímica',
-                        data: [
-                            ['Enero', Math.random() * 10],
-                            ['Febrero', Math.random() * 10],
-                            ['Marzo', Math.random() * 10],
-                            ['Abril', Math.random() * 10],
-                            ['Mayo', Math.random() * 10],
-                            ['Junio', Math.random() * 10],
-                            ['Julio', Math.random() * 10],
-                            ['Agosto', Math.random() * 10],
-                            ['Septiembre', Math.random() * 10],
-                            ['Octubre', Math.random() * 10],
-                            ['Noviembre', Math.random() * 10],
-                            ['Diciembre', Math.random() * 10],
-                        ],
-                    },
-                    {
-                        type: 'column',
-                        dataLabels: {
-                            enabled: false,
-                        },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}</b> Contagios<br/>',
-                        },
-                        name: 'Informática',
-                        id: 'Informática',
-                        data: [
-                            ['Enero', Math.random() * 10],
-                            ['Febrero', Math.random() * 10],
-                            ['Marzo', Math.random() * 10],
-                            ['Abril', Math.random() * 10],
-                            ['Mayo', Math.random() * 10],
-                            ['Junio', Math.random() * 10],
-                            ['Julio', Math.random() * 10],
-                            ['Agosto', Math.random() * 10],
-                            ['Septiembre', Math.random() * 10],
-                            ['Octubre', Math.random() * 10],
-                            ['Noviembre', Math.random() * 10],
-                            ['Diciembre', Math.random() * 10],
-                        ],
-                    },
-                ],
+                series: this.datadrill,
             },
         };
-        highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_0___default()(this.Highcharts);
     }
 }
-DashboardComponent.ɵfac = function DashboardComponent_Factory(t) { return new (t || DashboardComponent)(); };
-DashboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: DashboardComponent, selectors: [["app-dashboard"]], decls: 25, vars: 2, consts: [[2, "padding", "10px"], [2, "width", "100%", "height", "40%", "display", "block", 3, "Highcharts", "options"], ["fxLayout", "row", "fxLayoutAlign", "space-between center", "fxLayoutGap", "20px", 1, "stats-cards", 2, "padding", "10px"], ["fxFlex", "25"], ["label", "Contagios", "total", "60", "percentage", "20%"], ["id", "container"]], template: function DashboardComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](1, "app-widget-area");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](2, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](3, "mat-divider");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](4, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](6, "highcharts-chart", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](7, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](8, "mat-divider");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](9, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](10, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "mat-card", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](12, "app-widget-contagios", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](13, "mat-card", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](14, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](15, "mat-card", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](16, " stats ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](17, "mat-card", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](18, " stats ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](19, "mat-divider");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](20, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](22, "Table");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](23, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](24, "Pie Chart");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+DrilldownComponent.ɵfac = function DrilldownComponent_Factory(t) { return new (t || DrilldownComponent)(); };
+DrilldownComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: DrilldownComponent, selectors: [["app-widget-drilldown"]], inputs: { data: "data", datadrill: "datadrill" }, decls: 2, vars: 2, consts: [[2, "padding", "10px"], [2, "width", "100%", "height", "40%", "display", "block", 3, "Highcharts", "options"]], template: function DrilldownComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "highcharts-chart", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("Highcharts", ctx.Highcharts)("options", ctx.chartOptions);
-    } }, directives: [_shared_widgets_area_area_component__WEBPACK_IMPORTED_MODULE_3__["AreaComponent"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_4__["MatDivider"], highcharts_angular__WEBPACK_IMPORTED_MODULE_5__["HighchartsChartComponent"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutAlignDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutGapDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCard"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_6__["DefaultFlexDirective"], _shared_widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_8__["ContagiosComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJkYXNoYm9hcmQuY29tcG9uZW50LnNjc3MifQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("Highcharts", ctx.Highcharts)("options", ctx.chartOptions);
+    } }, directives: [highcharts_angular__WEBPACK_IMPORTED_MODULE_2__["HighchartsChartComponent"]], styles: ["body[_ngcontent-%COMP%] {\n  font-size: medium;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcZHJpbGxkb3duLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsaUJBQUE7QUFDRiIsImZpbGUiOiJkcmlsbGRvd24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5e1xyXG4gIGZvbnQtc2l6ZTogbWVkaXVtO1xyXG59XHJcbiJdfQ== */"] });
+
+
+/***/ }),
+
+/***/ "M95H":
+/*!**********************************************************!*\
+  !*** ./src/app/modules/dashboard/dashboard.component.ts ***!
+  \**********************************************************/
+/*! exports provided: DashboardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardComponent", function() { return DashboardComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _services_dashboard_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../services/dashboard.service */ "0AbP");
+/* harmony import */ var _shared_widgets_area_area_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/widgets/area/area.component */ "1efy");
+/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/divider */ "f0Cb");
+/* harmony import */ var _shared_widgets_drilldown_drilldown_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../shared/widgets/drilldown/drilldown.component */ "M+/B");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/flex-layout */ "YUcS");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
+/* harmony import */ var _shared_widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/widgets/contagios/contagios.component */ "qzwm");
+/* harmony import */ var _shared_widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../shared/widgets/comparacion/comparacion.component */ "uvJk");
+
+
+
+
+
+
+
+
+
+class DashboardComponent {
+    constructor(dashboardService) {
+        this.dashboardService = dashboardService;
+    }
+    ngOnInit() {
+        this.columnData = this.dashboardService.columnData;
+        this.columnDataDrill = this.dashboardService.columnDataDrill;
+        this.lollipop = this.dashboardService.lollipop;
+        this.areaSeries = this.dashboardService.areaSeries;
+    }
+}
+DashboardComponent.ɵfac = function DashboardComponent_Factory(t) { return new (t || DashboardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_dashboard_service__WEBPACK_IMPORTED_MODULE_1__["DashboardService"])); };
+DashboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DashboardComponent, selectors: [["app-dashboard"]], decls: 14, vars: 3, consts: [[3, "data"], [3, "data", "datadrill"], ["fxLayout", "row", "fxLayoutAlign", "space-between center", "fxLayoutGap", "20px", 1, "stats-cards", 2, "padding", "10px"], ["fxFlex", "25"], ["label", "Contagios", "total", "60", "percentage", "20%"], ["fxFlex", "75"]], template: function DashboardComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-widget-area", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "mat-divider");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "app-widget-drilldown", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "mat-divider");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-card", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "app-widget-contagios", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-card", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "app-widget-comparacion");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx.lollipop);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx.columnData)("datadrill", ctx.columnDataDrill);
+    } }, directives: [_shared_widgets_area_area_component__WEBPACK_IMPORTED_MODULE_2__["AreaComponent"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_3__["MatDivider"], _shared_widgets_drilldown_drilldown_component__WEBPACK_IMPORTED_MODULE_4__["DrilldownComponent"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutAlignDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutGapDirective"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCard"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["DefaultFlexDirective"], _shared_widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_7__["ContagiosComponent"], _shared_widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_8__["ComparacionComponent"]], styles: [".stats-cards[_ngcontent-%COMP%]   .mat-card[_ngcontent-%COMP%] {\n  overflow: hidden;\n}\n\ntable[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\nmat-divider[_ngcontent-%COMP%] {\n  border-width: 3px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxkYXNoYm9hcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0U7RUFDRSxnQkFBQTtBQUFKOztBQUlBO0VBQ0UsV0FBQTtBQURGOztBQUlBO0VBQ0UsaUJBQUE7QUFERiIsImZpbGUiOiJkYXNoYm9hcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc3RhdHMtY2FyZHMge1xyXG4gIC5tYXQtY2FyZCB7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIH1cclxufVxyXG5cclxudGFibGUge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG5tYXQtZGl2aWRlcntcclxuICBib3JkZXItd2lkdGg6IDNweDtcclxufVxyXG5cclxuIl19 */"] });
 
 
 /***/ }),
@@ -595,7 +801,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _widgets_area_area_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./widgets/area/area.component */ "1efy");
 /* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
 /* harmony import */ var _widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./widgets/contagios/contagios.component */ "qzwm");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _widgets_lollipop_lollipop_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./widgets/lollipop/lollipop.component */ "vMHU");
+/* harmony import */ var _widgets_drilldown_drilldown_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./widgets/drilldown/drilldown.component */ "M+/B");
+/* harmony import */ var _widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./widgets/comparacion/comparacion.component */ "uvJk");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+
 
 
 
@@ -616,8 +828,8 @@ __webpack_require__.r(__webpack_exports__);
 class SharedModule {
 }
 SharedModule.ɵfac = function SharedModule_Factory(t) { return new (t || SharedModule)(); };
-SharedModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineNgModule"]({ type: SharedModule });
-SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineInjector"]({ imports: [[
+SharedModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵdefineNgModule"]({ type: SharedModule });
+SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵdefineInjector"]({ imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"],
             _angular_material_divider__WEBPACK_IMPORTED_MODULE_7__["MatDividerModule"],
             _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"],
@@ -630,11 +842,14 @@ SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineInje
             _angular_material_card__WEBPACK_IMPORTED_MODULE_0__["MatCardModule"],
             highcharts_angular__WEBPACK_IMPORTED_MODULE_14__["HighchartsChartModule"],
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵsetNgModuleScope"](SharedModule, { declarations: [_components_header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵsetNgModuleScope"](SharedModule, { declarations: [_components_header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"],
         _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"],
         _components_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_6__["SidebarComponent"],
         _widgets_area_area_component__WEBPACK_IMPORTED_MODULE_13__["AreaComponent"],
-        _widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_15__["ContagiosComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"],
+        _widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_15__["ContagiosComponent"],
+        _widgets_lollipop_lollipop_component__WEBPACK_IMPORTED_MODULE_16__["LollipopComponent"],
+        _widgets_drilldown_drilldown_component__WEBPACK_IMPORTED_MODULE_17__["DrilldownComponent"],
+        _widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_18__["ComparacionComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"],
         _angular_material_divider__WEBPACK_IMPORTED_MODULE_7__["MatDividerModule"],
         _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"],
         _angular_material_icon__WEBPACK_IMPORTED_MODULE_9__["MatIconModule"],
@@ -648,7 +863,10 @@ SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineInje
         _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"],
         _components_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_6__["SidebarComponent"],
         _widgets_area_area_component__WEBPACK_IMPORTED_MODULE_13__["AreaComponent"],
-        _widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_15__["ContagiosComponent"]] }); })();
+        _widgets_contagios_contagios_component__WEBPACK_IMPORTED_MODULE_15__["ContagiosComponent"],
+        _widgets_drilldown_drilldown_component__WEBPACK_IMPORTED_MODULE_17__["DrilldownComponent"],
+        _widgets_lollipop_lollipop_component__WEBPACK_IMPORTED_MODULE_16__["LollipopComponent"],
+        _widgets_comparacion_comparacion_component__WEBPACK_IMPORTED_MODULE_18__["ComparacionComponent"]] }); })();
 
 
 /***/ }),
@@ -793,7 +1011,7 @@ HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "APP LOGO");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Dashboard Covid");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "ul", 3);
@@ -834,7 +1052,7 @@ HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](22);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](18);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matMenuTriggerFor", _r0);
-    } }, directives: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__["MatToolbar"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__["MatToolbarRow"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIcon"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["DefaultFlexDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutAlignDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutGapDirective"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_5__["MatMenuTrigger"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_5__["MatMenu"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_5__["MatMenuItem"]], styles: ["ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQUE7QUFDRiIsImZpbGUiOiJoZWFkZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJ1bCBsaXtcclxuICBsaXN0LXN0eWxlOiBub25lO1xyXG59XHJcbiJdfQ== */"] });
+    } }, directives: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__["MatToolbar"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__["MatToolbarRow"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIcon"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["DefaultFlexDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutAlignDirective"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_4__["DefaultLayoutGapDirective"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_5__["MatMenuTrigger"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_5__["MatMenu"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_5__["MatMenuItem"]], styles: ["ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  list-style: none;\n}\n\n.logo[_ngcontent-%COMP%] {\n  padding: 15px;\n  width: 50px;\n  height: 50px;\n  object-fit: fill;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0FBQ0YiLCJmaWxlIjoiaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsidWwgbGkge1xyXG4gIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbn1cclxuXHJcbi5sb2dvIHtcclxuICBwYWRkaW5nOiAxNXB4O1xyXG4gIHdpZHRoOiA1MHB4O1xyXG4gIGhlaWdodDogNTBweDtcclxuICBvYmplY3QtZml0OiBmaWxsO1xyXG4gIC8vIGJvcmRlci1yYWRpdXM6IDUwJTtcclxufVxyXG4iXX0= */"] });
 
 
 /***/ }),
@@ -876,18 +1094,20 @@ PostsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultModule", function() { return DefaultModule; });
-/* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
-/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/divider */ "f0Cb");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _default_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./default.component */ "xS3V");
-/* harmony import */ var src_app_modules_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/modules/dashboard/dashboard.component */ "M95H");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var src_app_modules_posts_posts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/modules/posts/posts.component */ "awxO");
-/* harmony import */ var src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/shared/shared.module */ "PCNd");
-/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/sidenav */ "XhcP");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
-/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/flex-layout */ "YUcS");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _services_dashboard_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../services/dashboard.service */ "0AbP");
+/* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
+/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/divider */ "f0Cb");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _default_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./default.component */ "xS3V");
+/* harmony import */ var src_app_modules_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/modules/dashboard/dashboard.component */ "M95H");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var src_app_modules_posts_posts_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/modules/posts/posts.component */ "awxO");
+/* harmony import */ var src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/shared/shared.module */ "PCNd");
+/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/sidenav */ "XhcP");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/flex-layout */ "YUcS");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
 
 
 
@@ -903,25 +1123,27 @@ __webpack_require__.r(__webpack_exports__);
 class DefaultModule {
 }
 DefaultModule.ɵfac = function DefaultModule_Factory(t) { return new (t || DefaultModule)(); };
-DefaultModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineNgModule"]({ type: DefaultModule });
-DefaultModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({ imports: [[
-            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
-            src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_7__["SharedModule"],
-            _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_8__["MatSidenavModule"],
-            _angular_material_divider__WEBPACK_IMPORTED_MODULE_1__["MatDividerModule"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"],
-            _angular_flex_layout__WEBPACK_IMPORTED_MODULE_10__["FlexModule"],
-            highcharts_angular__WEBPACK_IMPORTED_MODULE_0__["HighchartsChartModule"]
+DefaultModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({ type: DefaultModule });
+DefaultModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ providers: [
+        _services_dashboard_service__WEBPACK_IMPORTED_MODULE_0__["DashboardService"]
+    ], imports: [[
+            _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"],
+            src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_8__["SharedModule"],
+            _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"],
+            _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__["MatDividerModule"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_10__["MatCardModule"],
+            _angular_flex_layout__WEBPACK_IMPORTED_MODULE_11__["FlexModule"],
+            highcharts_angular__WEBPACK_IMPORTED_MODULE_1__["HighchartsChartModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵsetNgModuleScope"](DefaultModule, { declarations: [_default_component__WEBPACK_IMPORTED_MODULE_3__["DefaultComponent"], src_app_modules_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"], src_app_modules_posts_posts_component__WEBPACK_IMPORTED_MODULE_6__["PostsComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
-        src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_7__["SharedModule"],
-        _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_8__["MatSidenavModule"],
-        _angular_material_divider__WEBPACK_IMPORTED_MODULE_1__["MatDividerModule"],
-        _angular_material_card__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"],
-        _angular_flex_layout__WEBPACK_IMPORTED_MODULE_10__["FlexModule"],
-        highcharts_angular__WEBPACK_IMPORTED_MODULE_0__["HighchartsChartModule"]] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵsetNgModuleScope"](DefaultModule, { declarations: [_default_component__WEBPACK_IMPORTED_MODULE_4__["DefaultComponent"], src_app_modules_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["DashboardComponent"], src_app_modules_posts_posts_component__WEBPACK_IMPORTED_MODULE_7__["PostsComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"],
+        src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_8__["SharedModule"],
+        _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"],
+        _angular_material_divider__WEBPACK_IMPORTED_MODULE_2__["MatDividerModule"],
+        _angular_material_card__WEBPACK_IMPORTED_MODULE_10__["MatCardModule"],
+        _angular_flex_layout__WEBPACK_IMPORTED_MODULE_11__["FlexModule"],
+        highcharts_angular__WEBPACK_IMPORTED_MODULE_1__["HighchartsChartModule"]] }); })();
 
 
 /***/ }),
@@ -955,17 +1177,19 @@ class ContagiosComponent {
         // // @Input() percentage?: string;
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_0__;
         this.chartOptions = {};
-        this.contagios = 100;
+        this.vespertino = 30;
+        this.matutino = 25;
+        this.contagios = 0;
     }
     ngOnInit() {
+        this.contagios = this.vespertino + this.matutino;
         // var chart = Highcharts.chart("container", this.chartOptions );
         this.chartOptions = {
             chart: {
                 type: 'pie',
                 plotShadow: false,
                 // borderWidth: 0,
-                // margin: [2, 2, 2, 2],
-                height: 300,
+                margin: [2, 2, 2, 2],
             },
             credits: {
                 enabled: false,
@@ -1021,8 +1245,8 @@ class ContagiosComponent {
                     type: 'pie',
                     // name:"Contagios",
                     data: [
-                        { name: 'Matutino', y: 40, color: '#393e46' },
-                        { name: 'Vespertino', y: 60, color: '#506ef9' },
+                        { name: 'Matutino', y: this.matutino, color: '#393e46' },
+                        { name: 'Vespertino', y: this.vespertino, color: '#506ef9' },
                     ],
                 },
             ],
@@ -1039,6 +1263,178 @@ ContagiosComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("Highcharts", ctx.Highcharts)("options", ctx.chartOptions);
     } }, directives: [highcharts_angular__WEBPACK_IMPORTED_MODULE_3__["HighchartsChartComponent"]], styles: ["h4[_ngcontent-%COMP%] {\n  margin-top: 0;\n  font-weight: bold;\n  margin-bottom: 5px;\n}\n\n.total[_ngcontent-%COMP%] {\n  font-size: 3em;\n}\n\n.mat-icon[_ngcontent-%COMP%], .description[_ngcontent-%COMP%] {\n  color: green;\n  font-size: 2em;\n}\n\n.mat-icon[_ngcontent-%COMP%] {\n  position: relative;\n  padding: 0 20 px;\n  top: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFwuLlxcY29udGFnaW9zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUFDRjs7QUFFQTtFQUNFLGNBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7RUFDQSxjQUFBO0FBQ0Y7O0FBRUE7RUFDRSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsUUFBQTtBQUNGIiwiZmlsZSI6ImNvbnRhZ2lvcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImg0e1xyXG4gIG1hcmdpbi10b3A6IDA7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xyXG59XHJcblxyXG4udG90YWx7XHJcbiAgZm9udC1zaXplOiAzZW07XHJcbn1cclxuXHJcbi5tYXQtaWNvbiwuZGVzY3JpcHRpb257XHJcbiAgY29sb3I6ICBncmVlbjtcclxuICBmb250LXNpemU6IDJlbTtcclxufVxyXG5cclxuLm1hdC1pY29ue1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBwYWRkaW5nOiAwIDIwIHB4O1xyXG4gIHRvcDogNXB4O1xyXG59XHJcblxyXG5cclxuXHJcblxyXG4iXX0= */"] });
+
+
+/***/ }),
+
+/***/ "uvJk":
+/*!*********************************************************************!*\
+  !*** ./src/app/shared/widgets/comparacion/comparacion.component.ts ***!
+  \*********************************************************************/
+/*! exports provided: ComparacionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComparacionComponent", function() { return ComparacionComponent; });
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highcharts */ "6n/F");
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
+
+
+
+class ComparacionComponent {
+    /**
+     * Gestión Empresarial
+     * Aeronáutica
+     * Sistemas
+     * Mecatrónica
+     * Informática
+     * Bioquímica
+     * Contaduria
+     * Mecanica
+     * Química
+     * Electrónica
+     * Industrial
+     */
+    constructor() {
+        this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_0__;
+        this.chartOptions = {};
+    }
+    ngOnInit() {
+        this.chartOptions = {
+            title: {
+                text: 'Las carreras con mas contagios por trismetre',
+            },
+            xAxis: {
+                categories: [
+                    'Gestión Empresarial',
+                    'Aeronáutica',
+                    ' Sistemas',
+                    ' Mecatrónica',
+                    ' Informática',
+                    ' Bioquímica',
+                    ' Contaduria',
+                    ' Mecanica',
+                    ' Química',
+                    ' Electrónica',
+                    ' Industrial],',
+                ],
+            },
+            labels: {
+                items: [
+                    {
+                        html: 'Contagios Totales por mes',
+                        style: {
+                            left: '50px',
+                            top: '18px',
+                        },
+                    },
+                ],
+            },
+            series: [
+                {
+                    type: 'column',
+                    name: 'Enero',
+                    data: [3, 2, 1, 3, 4],
+                },
+                {
+                    type: 'column',
+                    name: 'Febrero',
+                    data: [2, 3, 5, 7, 6],
+                },
+                {
+                    type: 'column',
+                    name: 'Marzo',
+                    data: [4, 3, 3, 9, 0],
+                },
+                {
+                    type: 'spline',
+                    name: 'Average',
+                    data: [3, 2.67, 3, 6.33, 3.33],
+                    marker: {
+                        lineWidth: 2,
+                        // lineColor: Highcharts.getOptions().colors[3],
+                        fillColor: 'white',
+                    },
+                },
+                {
+                    type: 'pie',
+                    name: 'Contagios Totales',
+                    data: [
+                        {
+                            name: 'Enero',
+                            y: 13,
+                        },
+                        {
+                            name: 'Febrero',
+                            y: 23,
+                        },
+                        {
+                            name: 'Marzo',
+                            y: 19,
+                        },
+                    ],
+                    center: [100, 80],
+                    size: 100,
+                    showInLegend: false,
+                    dataLabels: {
+                        enabled: false,
+                    },
+                },
+            ],
+        };
+    }
+}
+ComparacionComponent.ɵfac = function ComparacionComponent_Factory(t) { return new (t || ComparacionComponent)(); };
+ComparacionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: ComparacionComponent, selectors: [["app-widget-comparacion"]], decls: 2, vars: 2, consts: [[2, "padding", "10px"], [2, "width", "100%", "height", "40%", "display", "block", 3, "Highcharts", "options"]], template: function ComparacionComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "highcharts-chart", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("Highcharts", ctx.Highcharts)("options", ctx.chartOptions);
+    } }, directives: [highcharts_angular__WEBPACK_IMPORTED_MODULE_2__["HighchartsChartComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb21wYXJhY2lvbi5jb21wb25lbnQuc2NzcyJ9 */"] });
+
+
+/***/ }),
+
+/***/ "vMHU":
+/*!***************************************************************!*\
+  !*** ./src/app/shared/widgets/lollipop/lollipop.component.ts ***!
+  \***************************************************************/
+/*! exports provided: LollipopComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LollipopComponent", function() { return LollipopComponent; });
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! highcharts */ "6n/F");
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var highcharts_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highcharts-angular */ "kAVD");
+
+
+
+class LollipopComponent {
+    constructor() {
+        this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_0__;
+        this.chartOptions = {};
+    }
+    ngOnInit() {
+        this.chartOptions = {};
+    }
+}
+LollipopComponent.ɵfac = function LollipopComponent_Factory(t) { return new (t || LollipopComponent)(); };
+LollipopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: LollipopComponent, selectors: [["app-widget-lollipop"]], inputs: { data: "data" }, decls: 2, vars: 2, consts: [[2, "width", "100%", "height", "100%", "display", "block", 3, "Highcharts", "options"]], template: function LollipopComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "highcharts-chart", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("Highcharts", ctx.Highcharts)("options", ctx.chartOptions);
+    } }, directives: [highcharts_angular__WEBPACK_IMPORTED_MODULE_2__["HighchartsChartComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJsb2xsaXBvcC5jb21wb25lbnQuc2NzcyJ9 */"] });
 
 
 /***/ }),
@@ -1134,7 +1530,7 @@ DefaultComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("opened", ctx.sideBarOpen);
-    } }, directives: [_shared_components_header_header_component__WEBPACK_IMPORTED_MODULE_1__["HeaderComponent"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_2__["MatDrawerContainer"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_2__["MatDrawer"], _shared_components_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_3__["SidebarComponent"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_2__["MatDrawerContent"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterOutlet"], _shared_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"]], styles: ["[_nghost-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n}\n\nmat-drawer[_ngcontent-%COMP%] {\n  width: 350px;\n}\n\nmat-drawer-container[_ngcontent-%COMP%] {\n  height: 100%;\n}\n\nmat-drawer-content[_ngcontent-%COMP%] {\n  padding: 20pxs;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxkZWZhdWx0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsWUFBQTtBQUNGOztBQUVBO0VBQ0UsWUFBQTtBQUNGOztBQUVBO0VBQ0UsWUFBQTtBQUNGOztBQUVBO0VBQ0UsY0FBQTtBQUNGIiwiZmlsZSI6ImRlZmF1bHQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG5cclxufVxyXG5tYXQtZHJhd2Vye1xyXG4gIHdpZHRoOiAzNTBweDtcclxufVxyXG5cclxubWF0LWRyYXdlci1jb250YWluZXJ7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcblxyXG5tYXQtZHJhd2VyLWNvbnRlbnR7XHJcbiAgcGFkZGluZzogMjBweHM7XHJcbn1cclxuIl19 */"] });
+    } }, directives: [_shared_components_header_header_component__WEBPACK_IMPORTED_MODULE_1__["HeaderComponent"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_2__["MatDrawerContainer"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_2__["MatDrawer"], _shared_components_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_3__["SidebarComponent"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_2__["MatDrawerContent"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterOutlet"], _shared_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"]], styles: ["[_nghost-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n}\n\nmat-drawer[_ngcontent-%COMP%] {\n  width: 350px;\n}\n\nmat-drawer-container[_ngcontent-%COMP%] {\n  height: 100%;\n}\n\nmat-drawer-content[_ngcontent-%COMP%] {\n  padding: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxkZWZhdWx0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsWUFBQTtBQUNGOztBQUVBO0VBQ0UsWUFBQTtBQUNGOztBQUVBO0VBQ0UsWUFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtBQUNGIiwiZmlsZSI6ImRlZmF1bHQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG5cclxufVxyXG5tYXQtZHJhd2Vye1xyXG4gIHdpZHRoOiAzNTBweDtcclxufVxyXG5cclxubWF0LWRyYXdlci1jb250YWluZXJ7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcblxyXG5tYXQtZHJhd2VyLWNvbnRlbnR7XHJcbiAgcGFkZGluZzogMTBweDtcclxufVxyXG4iXX0= */"] });
 
 
 /***/ }),
