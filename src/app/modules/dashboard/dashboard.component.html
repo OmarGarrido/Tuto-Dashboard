@@ -11,7 +11,22 @@
 <br>
 
 <mat-divider></mat-divider>
+<br>
 
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards" style="padding: 10px;">
+  <mat-card fxFlex="50">
+    <app-widget-lollipop label="Nuevos contagios" [data]="cards" type="areaspline"></app-widget-lollipop>
+  </mat-card>
+  <mat-card fxFlex="25">
+    <app-widget-lollipop label="Contagios este mes" [data]="lows"></app-widget-lollipop>
+  </mat-card>
+  <mat-card fxFlex="25">
+    <app-widget-lollipop label="Media de contagios" [data]="random" type="column"></app-widget-lollipop>
+  </mat-card>
+</div>
+
+<br>
+<mat-divider></mat-divider>
 <br>
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards" style="padding: 10px;">

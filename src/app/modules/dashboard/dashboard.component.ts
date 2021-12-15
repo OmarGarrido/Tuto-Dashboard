@@ -14,11 +14,17 @@ export class DashboardComponent implements OnInit {
   columnDataDrill: any;
   lollipop: any;
   areaSeries: any;
+  cards: any;
+  random: any;
+  lows: any;
 
 
   constructor(private dashboardService: DashboardService) {}
 
   ngOnInit(): void {
+    this.lows=this.dashboardService.lows
+    this.random=this.dashboardService.random
+    this.cards=this.dashboardService.cards
     this.columnData=this.dashboardService.columnData
     this.columnDataDrill=this.dashboardService.columnDataDrill
     this.lollipop=this.dashboardService.lollipop

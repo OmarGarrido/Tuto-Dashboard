@@ -6,6 +6,36 @@ import { Injectable } from '@angular/core';
 export class DashboardService {
   constructor() {}
 
+  cards = [
+    Math.round(Math.random() * 20),
+    Math.round(Math.random() * 30),
+    Math.round(Math.random() * 40),
+    Math.round(Math.random() * 50),
+    Math.round(Math.random() * 60),
+    Math.round(Math.random() * 70),
+    Math.round(Math.random() * 100),
+  ];
+
+  random = [
+    Math.round(Math.random() * 100),
+    Math.round(Math.random() * 100),
+    Math.round(Math.random() * 100),
+    Math.round(Math.random() * 100),
+    Math.round(Math.random() * 100),
+    Math.round(Math.random() * 100),
+    Math.round(Math.random() * 100),
+  ];
+
+  lows = [
+    Math.round(Math.random() * 100),
+    Math.round(Math.random() * 70),
+    Math.round(Math.random() * 60),
+    Math.round(Math.random() * 50),
+    Math.round(Math.random() * 40),
+    Math.round(Math.random() * 30),
+    Math.round(Math.random() * 20),
+  ];
+
   columnData = [
     {
       name: 'Gestión Empresarial',
