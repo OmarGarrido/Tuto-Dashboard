@@ -1,3 +1,4 @@
+import { DashboardService } from './../../services/dashboard.service';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { MatDividerModule } from '@angular/material/divider';
 import { NgModule } from '@angular/core';
@@ -25,5 +26,9 @@ import { FlexModule } from "@angular/flex-layout";
     FlexModule,
     HighchartsChartModule
   ],
+  providers:[
+    DashboardService
+  ],
+
 })
 export class DefaultModule {}

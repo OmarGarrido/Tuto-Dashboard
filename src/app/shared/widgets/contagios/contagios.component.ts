@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
-import { Chart } from 'highcharts';
 import Drilldown from 'highcharts/modules/drilldown';
 Drilldown(Highcharts);
 
@@ -15,14 +14,17 @@ export class ContagiosComponent implements OnInit {
   // // @Input() percentage?: string;
 
   Highcharts = Highcharts;
-chartOptions={}
-  contagios = 100;
+  chartOptions = {};
+  vespertino = 30;
+  matutino = 25;
+  contagios = 0;
 
   // prueba = new Chart(DriDrilldown);
 
   constructor() {}
 
   ngOnInit(): void {
+    this.contagios = this.vespertino + this.matutino;
     // var chart = Highcharts.chart("container", this.chartOptions );
     this.chartOptions = {
       chart: {
@@ -30,8 +32,8 @@ chartOptions={}
         plotShadow: false,
 
         // borderWidth: 0,
-        // margin: [2, 2, 2, 2],
-        height: 300,
+        margin: [2, 2, 2, 2],
+        // height: 300,
       },
       credits: {
         enabled: false,
@@ -90,8 +92,8 @@ chartOptions={}
           // name:"Contagios",
 
           data: [
-            { name: 'Matutino', y: 40, color: '#393e46' },
-            { name: 'Vespertino', y: 60, color: '#506ef9' },
+            { name: 'Matutino', y: this.matutino, color: '#393e46' },
+            { name: 'Vespertino', y: this.vespertino, color: '#506ef9' },
           ],
         },
       ],

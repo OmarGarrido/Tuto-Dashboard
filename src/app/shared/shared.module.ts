@@ -15,6 +15,9 @@ import { FlexModule } from '@angular/flex-layout';
 import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { ContagiosComponent } from './widgets/contagios/contagios.component';
+import { LollipopComponent } from './widgets/lollipop/lollipop.component';
+import { DrilldownComponent } from './widgets/drilldown/drilldown.component';
+import { ComparacionComponent } from './widgets/comparacion/comparacion.component';
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { ContagiosComponent } from './widgets/contagios/contagios.component';
     SidebarComponent,
     AreaComponent,
     ContagiosComponent,
+    LollipopComponent,
+    DrilldownComponent,
+    ComparacionComponent,
   ],
   imports: [
     CommonModule,
@@ -43,7 +49,10 @@ import { ContagiosComponent } from './widgets/contagios/contagios.component';
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    ContagiosComponent
+    ContagiosComponent,
+    DrilldownComponent,
+    LollipopComponent,
+    ComparacionComponent
   ],
 })
 export class SharedModule {}

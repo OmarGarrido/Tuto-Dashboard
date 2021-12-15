@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
 
@@ -8,6 +8,8 @@ import HC_exporting from 'highcharts/modules/exporting';
   styleUrls: ['./area.component.scss'],
 })
 export class AreaComponent implements OnInit {
+  @Input() data?: [];
+
   chartOptions = {};
   Highcharts = Highcharts;
 
@@ -21,15 +23,17 @@ export class AreaComponent implements OnInit {
       title: {
         text: 'Contagios de la última semana',
       },
+
       legend: {
-        layout: 'vertical',
-        align: 'left',
-        verticalAlign: 'top',
-        x: 60,
-        y: 15,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor: '#FFFFFF',
+        // enabled:true,
+        // layout: 'vertical',
+        // align: 'button',
+        // verticalAlign: 'button',
+        // x: 60,
+        // y: 15,
+        // floating: true,
+        // borderWidth: 0,
+        // backgroundColor: '#FFFFFF',
       },
       xAxis: {
         categories: [
@@ -58,48 +62,40 @@ export class AreaComponent implements OnInit {
       tooltip: {
         shared: true,
         valueSuffix: ' Contagios',
+        pointFormat:
+          '<span style="color:{point.color}">\u25CF</span>{series.name}</span>: <b>{point.y:.0f}</b><br/>',
       },
+
+      // tooltip: {
+      //   headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+      //   pointFormat:
+      //     '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}</b> %<br/>',
+      // },
       credits: {
         enabled: false,
       },
+
       plotOptions: {
         areaspline: {
           fillOpacity: 0.5,
+          // dataLabels: {
+          //   enabled: true,
+          //   format: '{point.y:.1f} %',
+          // distance: -1.7,
+          // filter: {
+          //   property: 'y',
+          //   operator: '>',
+          //   value: 0,
+          // },
+          // style: {
+          //   fontWeight: 'bold',
+          //   color: 'black',
+          // }
+          // },
         },
-
       },
-      series: [
-        {
-          name: 'Gestión Empresarial',
-          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-          data: [3, 4, 3, 5, 4, 10, 12],
-        },
-        {
-          name: 'Aeronáutica',
-          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-          data: [1, 3, 4, 3, 3, 5, 4],
-        },
-        {
-          name: 'Sistemas',
-          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-          data: [5, 3, 1, 8, 2, 3, 0],
-        },
-        {
-          name: 'Mecatrónica',
-          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-          data: [10, 5, 8, 6, 3, 2, 2],
-        },
-        {
-          name: 'Informática',
-          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-          data: [8, 4, 2, 0, 3, 6, 9],
-        },
-        {
-          name: 'Bioquímica',
-          // data: [Math.floor(Math.random()*10), Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)],
-          data: [1, 3, 5, 7, 8, 9, 5],
-        },
-      ],
+
+      series: this.data,
     };
     HC_exporting(Highcharts);
     setTimeout(() => {
